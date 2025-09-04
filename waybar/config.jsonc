@@ -2,12 +2,12 @@
 "layer": "top",
 "position": "top",
 "height": 10,
-"margin-bottom":0,
-"margin-top":0,
+"margin-bottom":-5,
+"margin-top":2,
 
 "modules-left": ["sway/mode","cpu","memory","network","mpd"],
 "modules-center": ["sway/workspaces","hyprland/workspaces"],
-"modules-right":  ["tray","idle_inhibitor","pulseaudio","backlight","battery","clock"],
+"modules-right":  ["tray",/*"idle_inhibitor, "*/"pulseaudio","backlight","battery","clock"],
 
 "battery": {
   "states": {
@@ -67,11 +67,12 @@
   "tooltip": false,
   "max-length": 20,
   "min-length": 6,
-  "format-alt": "     {signalStrength}%"
+  "format-alt": "     {signalStrength}%",
+  "on-click-right": "alacritty -e 'nmtui'"
 },
 "idle_inhibitor": {
     "format": "{icon}",
-    "format": "",
+    "format": "{icon}",
     "format-icons": {
         "activated": "",
         "deactivated": ""

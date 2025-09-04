@@ -3,32 +3,49 @@
     font-size: 13px;
     min-height: 0;
     color: white;
+    font-weight: bold;
 }
 
 window#waybar {
     background-color: rgba(6, 24, 44, 0.8);
+    background-color: transparent;
 }
 
 #workspaces{
+    border: 1px solid rgb(6, 24, 44);
+    background-color: rgba(6, 24, 44, 0.8);
+    border-radius: 100px;
     margin-top: 3px;
     margin-bottom: 2px;
     margin-right: 10px;
     margin-left: 25px;
     transition: all 1s ease-in-out;
+    padding: 2px 0;
+    padding-left: 10px;
 }
 
 #workspaces button{
     border-radius: 15px;
     margin-right: 10px;
-    padding: 1px 10px;
+    padding: 0px 10px;
     font-weight: bolder;
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: all .2s ease-in-out;
     /* background-color: #181818; */
+}
+
+#workspaces button:hover {
+    background-color: rgba(30, 143, 255, 0.486);
 }
 
 #workspaces button.active, #workspaces button.focused{
     /* padding: 0 22px; */
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;    
-    background: #779790;
+    /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */  
+    /* background: #779790; */
+    background-color: dodgerblue;
+    border: none;
+    /* border-bottom: 3px solid rgba(30, 143, 255, 0.582) */;
 }
 
 #tray,
@@ -48,5 +65,19 @@ window#waybar {
 #clock, 
 #idle_inhibitor,
 #network {
+    background-color: rgba(6, 24, 44, 0.8);
+    border-radius: 10px;
 	padding: 0 10px;
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-left: 2px;
+    border: 2px solid rgb(75, 131, 187);
+}
+
+#clock {
+    margin-right: 10px;
+}
+
+#cpu {
+    margin-left: 10px;
 }
