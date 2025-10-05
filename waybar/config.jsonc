@@ -17,12 +17,15 @@
   "format": "{icon}&#8239;{capacity}%",
   "format-charging": " &#8239;{capacity}%",
   "format-plugged": " &#8239;{capacity}%",
-  "format-alt": "{icon} {time}",
+  "format-alt": "{icon}",
   "format-icons": ["󰂎", "󰁼", "󰁿", "󰂁", "󰁹"]
 },
 "hyprland/workspaces": {
-     "sort-by-name": true,
-     "on-click": "activate"
+  "sort-by-name": true,
+  "on-click": "activate",
+  "persistent-workspaces": {
+    "*":[1, 2, 3]
+  }
 },
 "hyprland/window": {
     "max-length": 200,
@@ -62,7 +65,7 @@
   "format-wifi": "     {essid}",
   "format-ethernet": "",
   "format-linked": " {ipaddr}",
-  "format-disconnected": " Disconnected",
+  "format-disconnected": "   Disconnected",
   "format-disabled": "",
   "tooltip": false,
   "max-length": 20,
