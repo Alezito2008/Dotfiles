@@ -1,0 +1,2 @@
+hyprshot -m region -o /tmp -f ocr.png
+tesseract /tmp/ocr.png stdout -l eng+spa | wl-copy

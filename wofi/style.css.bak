@@ -1,0 +1,46 @@
+#window {
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+#outer-box {
+}
+
+#input {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+#img {
+    margin-left: 10px;
+}
+
+#scroll {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+#inner-box {
+    animation: all .3s ease;
+}
+
+#text {
+    margin-left: 1rem;
+}
+
+#entry:selected {
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgb(0, 129, 168), rgb(50, 25, 102));
+    transition: background-image .3s ease-in-out;
+    font-weight: bold;
+}
+
+#entry {
+    border-radius: 15px;
+}
+
+#expander-box {
+    background-color: transparent;
+}
